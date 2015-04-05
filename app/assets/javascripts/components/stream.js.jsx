@@ -9,7 +9,7 @@ var Stream = React.createClass({
       attributes.removeTagHandler = this.props.removeTagHandler;
     }
 
-    var streamItem = componentClass(attributes);
+    var streamItem = React.createElement(componentClass,attributes);
 
     return <div className="stream-item" key={item.id}>{streamItem}</div>
   },

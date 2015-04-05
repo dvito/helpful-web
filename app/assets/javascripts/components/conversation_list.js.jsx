@@ -218,7 +218,7 @@ var ConversationList = React.createClass({
 
   renderConversation: function(conversation) {
     if(conversation.messages.length > 0) {
-      return Conversation({
+      return React.createElement(Conversation,{
         conversation: conversation,
         toggleHandler: this.toggleHandler(conversation),
         addStreamItemHandler: this.addStreamItemHandler(conversation),

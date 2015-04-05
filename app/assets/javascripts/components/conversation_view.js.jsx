@@ -92,7 +92,7 @@ var ConversationView = React.createClass({
   },
 
   renderConversation: function() {
-    return Conversation({
+    return React.createElement(Conversation,{
       conversation: this.state.conversation,
       toggleHandler: function() {},
       addStreamItemHandler: this.addStreamItemHandler,
